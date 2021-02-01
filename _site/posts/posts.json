@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to IDEA",
+    "description": "Welcome to our new blog, IDEA. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Timothy Lim",
+        "url": "https://www.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-01-31",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-01-31T23:16:58+08:00",
+    "input_file": "welcome.utf8.md"
+  },
+  {
+    "path": "posts/2021-01-31-my-first-post/",
+    "title": "My First Post",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Timothy Lim",
+        "url": "https://www.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-01-31",
+    "categories": [],
+    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-01-31T23:51:58+08:00",
+    "input_file": "my-first-post.utf8.md"
+  }
+]
