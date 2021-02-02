@@ -1,11 +1,11 @@
 ---
-title: "My First Post"
+title: "DataViz Makeover 1"
 description: |
-  A short description of the post.
+  This post aims to critique a published chart's data visualization and aesthetics, and in turn propose and design a new chart that can better visualize the findings from the report. 
 author:
-  - name: Timothy Lim 
+  - name: Timothy Lim
     url: https://www.smu.edu.sg/
-date: 01-31-2021
+date: 02-02-2021
 output:
   distill::distill_article:
     self_contained: false
@@ -16,6 +16,10 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+ISSS608 Visual Analytics and Applications - DataViz Makeover 1
+
+Data Visualization (Tableau Online):
+https://public.tableau.com/profile/timothy.lim1214#!/vizhome/Assignment1_v4/Dashboard1?publish=yes
 
 # 1.0 Overview
 
