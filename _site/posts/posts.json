@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-02-18-dataviz-makeover-2/",
+    "title": "DataViz Makeover 2",
+    "description": "This post aims to critique a published chart's data visualization and aesthetics, and in turn propose and design a new chart that can better visualize the findings from the report.",
+    "author": [
+      {
+        "name": "Timothy Lim",
+        "url": "https://www.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-02-18",
+    "categories": [],
+    "contents": "\r\nISSS608 Visual Analytics and Applications - DataViz Makeover 2 \r\nData Visualization (Tableau Online)\r\nGiven chart:\r\n\r\n\r\n\r\n1.0 Data Visualization Critique\r\n 1.1 Clarity \r\nChart title can be clearer by including the time frame of comparison as well as being clear on what “per cent” refers to.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-02-18-dataviz-makeover-2/givenchart.png",
+    "last_modified": "2021-02-18T16:13:52+08:00",
+    "input_file": "dataviz-makeover-2.utf8.md"
+  },
+  {
     "path": "posts/2021-02-02-dataviz-makeover-1/",
     "title": "DataViz Makeover 1",
     "description": "This post aims to critique a published chart's data visualization and aesthetics, and in turn propose and design a new chart that can better visualize the findings from the report.",

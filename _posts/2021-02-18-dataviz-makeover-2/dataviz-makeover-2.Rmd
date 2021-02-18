@@ -1,0 +1,36 @@
+---
+title: "DataViz Makeover 2"
+description: |
+  This post aims to critique a published chart's data visualization and aesthetics, and in turn propose and design a new chart that can better visualize the findings from the report. 
+author:
+  - name: Timothy Lim
+    url: https://www.smu.edu.sg/
+date: 02-18-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<font size="4.5">**ISSS608 Visual Analytics and Applications - DataViz Makeover 2**
+<font size="4">
+
+[Data Visualization (Tableau Online)](https://public.tableau.com/profile/timothy.lim1214#!/vizhome/DataVizMakeover2_16136340047980/Dashboard1?publish=yes)
+
+Given chart:
+
+```{r}
+knitr::include_graphics("givenchart.png")
+```
+
+# 1.0 Data Visualization Critique
+
+<font size="5"> **1.1 Clarity**
+<font size="4">
+
+a) Chart title can be clearer by including the time frame of comparison as well as being clear on what “per cent” refers to. 
+
