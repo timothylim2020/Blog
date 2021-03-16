@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-03-16-dataviz-makeover-3/",
+    "title": "DataViz Makeover 3",
+    "description": "This post aims to critique a published chart's data visualization and aesthetics, and in turn propose and design a new chart that can better visualize the findings from the report.",
+    "author": [
+      {
+        "name": "Timothy Lim",
+        "url": "https://www.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-03-16",
+    "categories": [],
+    "contents": "\r\nISSS608 Visual Analytics and Applications - DataViz Makeover 2 \r\nData Visualization (Tableau Online)\r\nGiven chart:\r\n\r\n\r\n\r\n1.0 Data Visualization Critique\r\nThe given diagram consists of two charts, with the map visualization on the left showing the different events happening in South-East Asia, and a line graph on the right which attempts to visualize the trend of the various event types for each country. Here, the clarity, aesthetics and interactivity will be critiqued.\r\n 1.1 Clarity \r\nThe titles for the charts include useful information such as the country selected and the year range for the map\r\noverlapping data - transparency?\r\n1.2 Aesthetics \r\nOn the map chart, the different event types are colour-coded which allows the user to very quickly tell which are the hot spots for each event type in various locations on the map. This colour-coding should be kept for the new proposed design.\r\nThe Y-axis on the line graphs are labelled “Count of Sheet1” which is not useful for the user as Sheet1 holds no meaning for the user. It should instead be labelled as “Count”.\r\n1.3 Interactivity \r\nThe details in the tool tip is not useful for the user, specifically the event ID, latitude and longitude that is probably not of use to the user. Instead, the name of the country and province or state, the groups involved in the event and some notes on the specific event will be more useful.\r\nA date slider can be implemented for the user to choose a specific date range in the event his or her interest is only for a particular time frame.\r\nAs some points may be covered by others on the map, some data points may be missed out in the visualization. To resolve this, a filter for the event type can firstly be implemented to prevent certain event types from overlapping each other.\r\nNew Proposed Design\r\nSince the data on the given map chart is scattered and there is no function to see an overview of events that happened in each state or province, a new map that shows the breakdown of the accumulation of the different types of events for each state was implemented. A selection tool will be implemented to allow the user to switch between the two provided maps.\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-03-16-dataviz-makeover-3/givenchart.png",
+    "last_modified": "2021-03-17T00:02:22+08:00",
+    "input_file": "dataviz-makeover-3.utf8.md"
+  },
+  {
     "path": "posts/2021-02-18-dataviz-makeover-2/",
     "title": "DataViz Makeover 2",
     "description": "This post aims to critique a published chart's data visualization and aesthetics, and in turn propose and design a new chart that can better visualize the findings from the report.",
