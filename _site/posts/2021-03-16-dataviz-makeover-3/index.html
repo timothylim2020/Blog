@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["aftercount.png","count.png","country.png","createhierarchy.png","dataviz-makeover-3_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-3_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-3_files/distill-2.2.21/template.v2.js","dataviz-makeover-3_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-3_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-3_files/popper-2.6.0/popper.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-3_files/webcomponents-2.0.0/webcomponents.js","datefield.png","edittooltip.png","eventtypetocolor.png","filtercountryandeventtype.png","formhierarchy.png","givenchart.png","inputlonglat.png","longlat.png","marks.png","namehierarchy.png","opencountry.png","rangeofdates.png","rangeofdates2.png","renamemapbyevent.png","showfilter.png","showmarklabels.png","stateprov.png","tooltip.png"]}
+  {"type":"character","attributes":{},"value":["aftercount.png","automatic.png","barchartcolumnandrow.png","barcharttooltip.png","bycountrymarks.png","calcfield.png","charttitle.png","count.png","country.png","createhierarchy.png","createparameter.png","dataviz-makeover-3_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-3_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-3_files/distill-2.2.21/template.v2.js","dataviz-makeover-3_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-3_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-3_files/popper-2.6.0/popper.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-3_files/webcomponents-2.0.0/webcomponents.js","datefield.png","duplicate.png","editparameterchart.png","editparametermap.png","edittooltip.png","emptycont.png","eventtypetocolor.png","eventypecolor.png","filtercountryandeventtype.png","filters.png","filterview.png","finaldashboard.png","formhierarchy.png","givenchart.png","inputlonglat.png","longlat.png","longlatgenerated.png","marks.png","namehierarchy.png","opencountry.png","rangeofdates.png","rangeofdates2.png","renamemapbycountry.png","renamemapbyevent.png","selectview.png","selectviewmap.png","showfilter.png","showmarklabels.png","sidebyside.png","stateprov.png","tooltip.png","trendsheetcolumnandrow.png","trendsheetmarksandfilter.png","vertical.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2099,7 +2099,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p><font size="5"><strong>ISSS608 Visual Analytics and Applications - DataViz Makeover 2</strong> <font size="4"></p>
+<p><font size="5"><strong>ISSS608 Visual Analytics and Applications - DataViz Makeover 3</strong> <font size="4"></p>
 <p><a href="https://public.tableau.com/profile/timothy.lim1214#!/vizhome/DataViz3v5/Dashboard3?publish=yes">Data Visualization (Tableau Online)</a></p>
 <p>Given chart:</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2200,7 +2200,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p><img src="renamemapbyevent.png" width="246" /></p>
 </div>
 <p><strong>Creating Bar Chart Sheet:</strong></p>
-<p>In a new sheet, Event Type was dragged into Columns, and Country/Province or State and Event Type were dragged into Rows. Then, the plus sign under Country was clicked on to expand, showing State/Province.</p>
+<p>In a new sheet renamed as Bar Chart, Event Type was dragged into Columns, and Country/Province or State and Event Type were dragged into Rows. Then, the plus sign under Country was clicked on to expand, showing State/Province.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="opencountry.png" width="452" /></p>
 </div>
@@ -2219,7 +2219,93 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="showmarklabels.png" width="186" /></p>
 </div>
-<p><strong>Creating Map (By Country) Sheet:</strong></p>
+<p><strong>Creating Map (By Country/State) Sheet:</strong></p>
+<p>The Map (By Event) sheet was duplicated and renamed as Map (By Country/State).</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="duplicate.png" width="230" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="renamemapbycountry.png" width="374" /></p>
+</div>
+<p>Under the Marks section, Event Type and Event Id Cnty were removed, and Country/Province or State were added into Color and Detail. For the field Country/Province or State under Detail, the plus sign was clicked to expand the hierarchy to show state and province as well.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="bycountrymarks.png" width="155" /></p>
+</div>
+<p>AVG(Longitude) and AVG(Latitude) were replaced by Longitude (generated) and Latitude (generated) in Columns and Rows respectively.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="longlatgenerated.png" width="251" /></p>
+</div>
+<p>Country and Event Type were removed from the Filter, leaving Event Date behind. Then, the Tooltip icon was selected and edited to show the following.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="barcharttooltip.png" width="431" /></p>
+</div>
+<p><strong>Creating Trend Sheet:</strong></p>
+<p>A new sheet was created and renamed Trend. In the new sheet, Event Date was dragged into Columns, and Country/Province or State and two Event Type into Rows. One of the Event Types dragged into Rows was changed to Count.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="trendsheetcolumnandrow.png" width="414" /></p>
+</div>
+<p>Then, Event Date and Country were dragged into Filters.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="trendsheetmarksandfilter.png" width="101" /></p>
+</div>
+<p><strong>Creating Bar Chart (Total) Sheet:</strong></p>
+<p>A new sheet was created and renamed Bar Chart (Total). In this new sheet, Country/Province or State was dragged into Columns, then two Event Type were dragged into Rows. One Event Type was changed to Count.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="barchartcolumnandrow.png" width="388" /></p>
+</div>
+<p>Event Type was dragged into Color.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="eventypecolor.png" width="144" /></p>
+</div>
+<p><strong>Creating the Page Selector:</strong></p>
+<p>A parameter was created by right-clicking in the Data tab, then selecting Create Parameter. The first parameter was created for Select View (Map), and another for Select View (Chart).</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="createparameter.png" width="192" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="editparametermap.png" width="342" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="editparameterchart.png" width="324" /></p>
+</div>
+<p>Then, a calculated field was created for each Select View. The respective Select View type parameter was dragged into their respective calculated field.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="calcfield.png" width="178" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="selectview.png" width="256" /></p>
+</div>
+<p>In each individual sheet, the Select View calculated field was dragged into Filter. Specifically, Map (By Event) and Map (By Country/Province or State) were filtered by Select View (Map), while Trend and Bar Chart (Total) were filtered by Select View (Chart).</p>
+<p>In the Filter pop up box, Custom value list was selected, and the required selection were input.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="filterview.png" width="234" /></p>
+</div>
+<p>Finally, the Show Filter was selected for the four sheets.</p>
+<p><font size="5"><strong>2.4 Creating The Dashboard</strong> <font size="4"></p>
+<p>The size of the dashboard was firstly changed to automatic.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="automatic.png" width="142" /></p>
+</div>
+<p>Then, two vertical containers were put side by side.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="vertical.png" width="124" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="emptycont.png" width="400" /></p>
+</div>
+<p>The Map (By Event) sheet was first dragged into the left container, and the title was hidden. Then, the Map (By Country/Province or State) was dragged on top of the Map (By Event) sheet, and the title was also hidden. Then, the Select View (Map) filter was dragged to the top.</p>
+<p>This was repeated for the Trend sheet and Bar Chart (Total) sheet.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="sidebyside.png" width="408" /></p>
+</div>
+<p>Chart titles were added by dragging text boxes on top of both vertical containers. Then, another text box was dragged on top of everything and the dashboard title was inserted.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="charttitle.png" width="802" /></p>
+</div>
+<p>Finally, the source was added using a text box below everything, giving the final result of the proposed dashboard.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="finaldashboard.png" width="956" /></p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
