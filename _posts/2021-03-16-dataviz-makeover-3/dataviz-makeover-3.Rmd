@@ -241,48 +241,105 @@ knitr::include_graphics("barcharttooltip.png")
 
 **Creating Trend Sheet:**
 
+A new sheet was created and renamed Trend. In the new sheet, Event Date was dragged into Columns, and Country/Province or State and two Event Type into Rows. One of the Event Types dragged into Rows was changed to Count. 
+
 ```{r}
-knitr::include_graphics(".png")
+knitr::include_graphics("trendsheetcolumnandrow.png")
+```
+
+Then, Event Date and Country were dragged into Filters. 
+
+```{r}
+knitr::include_graphics("trendsheetmarksandfilter.png")
+```
+
+**Creating Bar Chart (Total) Sheet:**
+
+A new sheet was created and renamed Bar Chart (Total). In this new sheet, Country/Province or State was dragged into Columns, then two Event Type were dragged into Rows. One Event Type was changed to Count. 
+
+```{r}
+knitr::include_graphics("barchartcolumnandrow.png")
+```
+
+Event Type was dragged into Color. 
+
+```{r}
+knitr::include_graphics("eventypecolor.png")
+```
+
+**Creating the Page Selector:**
+
+A parameter was created by right-clicking in the Data tab, then selecting Create Parameter. The first parameter was created for Select View (Map), and another for Select View (Chart). 
+
+```{r}
+knitr::include_graphics("createparameter.png")
 ```
 
 ```{r}
-knitr::include_graphics(".png")
+knitr::include_graphics("editparametermap.png")
 ```
 
 ```{r}
-knitr::include_graphics(".png")
+knitr::include_graphics("editparameterchart.png")
+```
+
+Then, a calculated field was created for each Select View. The respective Select View type parameter was dragged into their respective calculated field. 
+
+```{r}
+knitr::include_graphics("calcfield.png")
 ```
 
 ```{r}
-knitr::include_graphics(".png")
+knitr::include_graphics("selectview.png")
+```
+
+In each individual sheet, the Select View calculated field was dragged into Filter. Specifically, Map (By Event) and Map (By Country/Province or State) were filtered by Select View (Map), while Trend and Bar Chart (Total) were filtered by Select View (Chart). 
+
+In the Filter pop up box, Custom value list was selected, and the required selection were input. 
+
+```{r}
+knitr::include_graphics("filterview.png")
+```
+
+Finally, the Show Filter was selected for the four sheets. 
+
+<font size="5">**2.4 Creating The Dashboard**
+<font size="4">
+
+The size of the dashboard was firstly changed to automatic.
+
+```{r}
+knitr::include_graphics("automatic.png")
+```
+
+Then, two vertical containers were put side by side.
+
+```{r}
+knitr::include_graphics("vertical.png")
 ```
 
 ```{r}
-knitr::include_graphics(".png")
+knitr::include_graphics("emptycont.png")
 ```
+
+The Map (By Event) sheet was first dragged into the left container, and the title was hidden. Then, the Map (By Country/Province or State) was dragged on top of the Map (By Event) sheet, and the title was also hidden. Then, the Select View (Map) filter was dragged to the top. 
+
+This was repeated for the Trend sheet and Bar Chart (Total) sheet. 
 
 ```{r}
-knitr::include_graphics(".png")
+knitr::include_graphics("sidebyside.png")
 ```
+
+Chart titles were added by dragging text boxes on top of both vertical containers. Then, another text box was dragged on top of everything and the dashboard title was inserted.
 
 ```{r}
-knitr::include_graphics(".png")
+knitr::include_graphics("charttitle.png")
 ```
+
+Finally, the source was added using a text box below everything, giving the final result of the proposed dashboard. 
 
 ```{r}
-knitr::include_graphics(".png")
-```
-
-```{r}
-knitr::include_graphics(".png")
-```
-
-```{r}
-knitr::include_graphics(".png")
-```
-
-```{r}
-knitr::include_graphics(".png")
+knitr::include_graphics("finaldashboard.png")
 ```
 
 
@@ -293,3 +350,5 @@ knitr::include_graphics(".png")
 
 
 
+
+ 
