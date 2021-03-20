@@ -16,7 +16,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<font size="5">**ISSS608 Visual Analytics and Applications - DataViz Makeover 2**
+<font size="5">**ISSS608 Visual Analytics and Applications - DataViz Makeover 3**
 <font size="4">
 
 [Data Visualization (Tableau Online)](https://public.tableau.com/profile/timothy.lim1214#!/vizhome/DataViz3v5/Dashboard3?publish=yes)
@@ -181,7 +181,7 @@ knitr::include_graphics("renamemapbyevent.png")
 
 **Creating Bar Chart Sheet:**
 
-In a new sheet, Event Type was dragged into Columns, and Country/Province or State and Event Type were dragged into Rows. Then, the plus sign under Country was clicked on to expand, showing State/Province. 
+In a new sheet renamed as Bar Chart, Event Type was dragged into Columns, and Country/Province or State and Event Type were dragged into Rows. Then, the plus sign under Country was clicked on to expand, showing State/Province. 
 
 ```{r}
 knitr::include_graphics("opencountry.png")
@@ -209,7 +209,37 @@ Data labels were created by clicking on the Label icon, then checking the Show m
 knitr::include_graphics("showmarklabels.png")
 ```
 
-**Creating Map (By Country) Sheet:**
+**Creating Map (By Country/State) Sheet:**
+
+The Map (By Event) sheet was duplicated and renamed as Map (By Country/State).
+
+```{r}
+knitr::include_graphics("duplicate.png")
+```
+
+```{r}
+knitr::include_graphics("renamemapbycountry.png")
+```
+
+Under the Marks section, Event Type and Event Id Cnty were removed, and Country/Province or State were added into Color and Detail. For the field Country/Province or State under Detail, the plus sign was clicked to expand the hierarchy to show state and province as well. 
+
+```{r}
+knitr::include_graphics("bycountrymarks.png")
+```
+
+AVG(Longitude) and AVG(Latitude) were replaced by Longitude (generated) and Latitude (generated) in Columns and Rows respectively.
+
+```{r}
+knitr::include_graphics("longlatgenerated.png")
+```
+
+Country and Event Type were removed from the Filter, leaving Event Date behind. Then, the Tooltip icon was selected and edited to show the following.
+
+```{r}
+knitr::include_graphics("barcharttooltip.png")
+```
+
+**Creating Trend Sheet:**
 
 ```{r}
 knitr::include_graphics(".png")
@@ -254,27 +284,6 @@ knitr::include_graphics(".png")
 ```{r}
 knitr::include_graphics(".png")
 ```
-
-```{r}
-knitr::include_graphics(".png")
-```
-
-```{r}
-knitr::include_graphics(".png")
-```
-
-```{r}
-knitr::include_graphics(".png")
-```
-
-```{r}
-knitr::include_graphics(".png")
-```
-
-```{r}
-knitr::include_graphics(".png")
-```
-
 
 
 

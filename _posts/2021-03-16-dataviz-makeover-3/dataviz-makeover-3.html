@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-3_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-3_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-3_files/distill-2.2.21/template.v2.js","dataviz-makeover-3_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-3_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-3_files/popper-2.6.0/popper.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-3_files/webcomponents-2.0.0/webcomponents.js","givenchart.png"]}
+  {"type":"character","attributes":{},"value":["aftercount.png","count.png","country.png","createhierarchy.png","dataviz-makeover-3_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-3_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-3_files/distill-2.2.21/template.v2.js","dataviz-makeover-3_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-3_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-3_files/popper-2.6.0/popper.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-3_files/webcomponents-2.0.0/webcomponents.js","datefield.png","edittooltip.png","eventtypetocolor.png","filtercountryandeventtype.png","formhierarchy.png","givenchart.png","inputlonglat.png","longlat.png","marks.png","namehierarchy.png","opencountry.png","rangeofdates.png","rangeofdates2.png","renamemapbyevent.png","showfilter.png","showmarklabels.png","stateprov.png","tooltip.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1478,7 +1478,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <p><font size="5"><strong>ISSS608 Visual Analytics and Applications - DataViz Makeover 2</strong> <font size="4"></p>
-<p><a href="https://public.tableau.com/profile/timothy.lim1214#!/vizhome/DataVizMakeover2_16136340047980/Dashboard1?publish=yes">Data Visualization (Tableau Online)</a></p>
+<p><a href="https://public.tableau.com/profile/timothy.lim1214#!/vizhome/DataViz3v5/Dashboard3?publish=yes">Data Visualization (Tableau Online)</a></p>
 <p>Given chart:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="givenchart.png" width="574" /></p>
@@ -1487,25 +1487,117 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>The given diagram consists of two charts, with the map visualization on the left showing the different events happening in South-East Asia, and a line graph on the right which attempts to visualize the trend of the various event types for each country. Here, the clarity, aesthetics and interactivity will be critiqued.</p>
 <p><font size="5"> <strong>1.1 Clarity</strong> <font size="4"></p>
 <ol type="a">
-<li>The titles for the charts include useful information such as the country selected and the year range for the map</li>
+<li><p>The titles for the charts include useful information such as the country selected and the year range for the map, and indicating conflict event by type on for the trend chart. The title of the new proposed design should also ensure that the title is informative of the described chart.</p></li>
+<li><p>Some of the data points on the map maybe overlapped by other data points of another event at the same location. Hence, having a filter for the event type may be useful in firstly allowing the user to ensure there is no overlap of another event type, and secondly the user is able to specifically look at a certain event type to focus on certain hotspots of a certain event.</p></li>
+<li><p>The Y-axis on the line graphs are labelled “Count of Sheet1” which is not useful for the user as Sheet1 holds no meaning for the user. It can instead be labelled as “Count”.</p></li>
 </ol>
-<p>overlapping data - transparency?</p>
 <p><font size="5"><strong>1.2 Aesthetics</strong> <font size="4"></p>
 <ol type="a">
 <li><p>On the map chart, the different event types are colour-coded which allows the user to very quickly tell which are the hot spots for each event type in various locations on the map. This colour-coding should be kept for the new proposed design.</p></li>
-<li><p>The Y-axis on the line graphs are labelled “Count of Sheet1” which is not useful for the user as Sheet1 holds no meaning for the user. It should instead be labelled as “Count”.</p></li>
+<li><p>The map used is greyscale, which helps to create a stronger contrast against the data points to allow the user to very quickly pick up the data points, compared with maps coloured with terrain and details.</p></li>
+<li><p>The line graph on the right are all in blue. They can be colour-coded according to the colour-coding done on the map chart to have a consistent distinction between the different event types.</p></li>
 </ol>
 <p><font size="5"><strong>1.3 Interactivity</strong> <font size="4"></p>
 <ol type="a">
-<li><p>The details in the tool tip is not useful for the user, specifically the event ID, latitude and longitude that is probably not of use to the user. Instead, the name of the country and province or state, the groups involved in the event and some notes on the specific event will be more useful.</p></li>
+<li><p>The details in the tool tip on the map chart is not useful for the user, specifically the event ID, latitude and longitude. Instead, the name of the country and province or state, the groups involved in the event, the date of event and some notes on the specific event will be more useful for the user to have a very quick overview of the event that occurred.</p></li>
 <li><p>A date slider can be implemented for the user to choose a specific date range in the event his or her interest is only for a particular time frame.</p></li>
-<li><p>As some points may be covered by others on the map, some data points may be missed out in the visualization. To resolve this, a filter for the event type can firstly be implemented to prevent certain event types from overlapping each other.</p></li>
 </ol>
-<p>New Proposed Design</p>
+<h1 id="the-new-design">2.0 The New Design</h1>
+<p><font size="5"><strong>2.1 Draft Design</strong> <font size="4"></p>
+<p>Taking into account the points mentioned above, a proposed design was drafted as below.</p>
+<p>INSERT DRAFT</p>
+<p><strong>Advantages of this design:</strong></p>
 <ul>
-<li><p>Since the data on the given map chart is scattered and there is no function to see an overview of events that happened in each state or province, a new map that shows the breakdown of the accumulation of the different types of events for each state was implemented. A selection tool will be implemented to allow the user to switch between the two provided maps.</p></li>
-<li></li>
+<li><p>New tooltip to allow users to see the details of each event occurrence by doing a mouse-over on the datapoint.</p></li>
+<li><p>Another map that allows the user to toggle to see the total events by event type for each province/state in each country by hovering his or her cursor over the particular state. The user can then get a clearer idea of the number of cases that occurred from the first map chart based on the hotspots observed.</p></li>
+<li><p>A filter implemented for event type so that users can decide to see only a certain event type which prevents any overlapping of other event types, and to have a clear view of the hot spots of a certain event type.</p></li>
+<li><p>A filter to allow the user to specify the date range for observation in the event the user only has a certain time frame of interest.</p></li>
+<li><p>On top of showing the trend of event occurrences, a bar chart plot that the user can toggle to see the breakdown of total event types occurring for each country.</p></li>
+<li><p>Two view selectors implemented for the maps and the charts</p></li>
 </ul>
+<p><font size="5"><strong>2.2 Preparation of Data Visualization</strong> <font size="4"></p>
+<p>The data used was obtained from <a href="https://acleddata.com/">The Armed Conflict Location &amp; Event Data Project (ACLED)</a>.</p>
+<p>The data obtained consists of 1 Microsoft Excel Workbook, containing data of event types of armed conflict for countries in South-East Asia.</p>
+<p><strong>Importing Data Into Tableau and Data Preparation:</strong></p>
+<p>The Excel file was dragged into the Tableau window, which automatically loads the data in Tableau itself. Here, the Event Date was set as a Date field, while Country, Latitude and Longitude were set in their respective geographical roles.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="datefield.png" width="120" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="country.png" width="200" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="longlat.png" width="425" /></p>
+</div>
+<p><font size="5"><strong>2.3 Creating The Sheets For The Dashboard</strong> <font size="4"></p>
+<p><strong>Creating Map (By Event) Sheet:</strong></p>
+<p>Under Sheet 1, Admin 1 was renamed as State/Province, and then set as a State/Province under the geographical role.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="stateprov.png" width="240" /></p>
+</div>
+<p>Longitude and Latitude were dragged into Columns and Rows respectively. The map should be automatically generated.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="inputlonglat.png" width="198" /></p>
+</div>
+<p>A hierarchy for the location made up of Country and State/Province was created and named Country/Province or State. This was done by firstly clicking under Country and selecting Hierarchy, then select Create Hierarchy, followed by naming the hierachy.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="createhierarchy.png" width="489" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="namehierarchy.png" width="316" /></p>
+</div>
+<p>State/Province was dragged under Country, in the Country/Province or State hierarchy field to form the next layer of the hierarchy.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="formhierarchy.png" width="170" /></p>
+</div>
+<p>Event Type, Event Id Cnty, Country/Province or State, Notes, Actor 1, Actor 2, Event Date were dragged and dropped into Detail. Country was expanded to show State/Province by clicking on the plus sign, then the same was done for YEAR(Event Date) to show both the month, then repeated for Month to show the day.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="marks.png" width="137" /></p>
+</div>
+<p>Country and Event Type were dragged and dropped into Filter.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="filtercountryandeventtype.png" width="234" /></p>
+</div>
+<p>Event Date was subsequently dragged and dropped into Filter, then Range of Dates was selected, followed by OK.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="rangeofdates.png" width="142" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="rangeofdates2.png" width="407" /></p>
+</div>
+<p>Then show filter by clicking the drop down arrow and select Show Filter.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="showfilter.png" width="128" /></p>
+</div>
+<p>The tooltip was edited by clicking on the Tooltip icon under Marks, then the below inputs were added.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="edittooltip.png" width="466" /></p>
+</div>
+<p>Sheet 1 was then renamed as Map (By Event)</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="renamemapbyevent.png" width="246" /></p>
+</div>
+<p><strong>Creating Bar Chart Sheet:</strong></p>
+<p>In a new sheet, Event Type was dragged into Columns, and Country/Province or State and Event Type were dragged into Rows. Then, the plus sign under Country was clicked on to expand, showing State/Province.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="opencountry.png" width="452" /></p>
+</div>
+<p>Event Type was then changed to Count by clicking on the drop down arrow, then selecting Measure, followed by Count.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="count.png" width="389" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="aftercount.png" width="563" /></p>
+</div>
+<p>The chart type was set as Bar, and Event Type was dragged into Color.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="eventtypetocolor.png" width="156" /></p>
+</div>
+<p>Data labels were created by clicking on the Label icon, then checking the Show mark labels checkbox.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="showmarklabels.png" width="186" /></p>
+</div>
+<p><strong>Creating Map (By Country) Sheet:</strong></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
