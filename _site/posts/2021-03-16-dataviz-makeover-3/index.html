@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["aftercount.png","automatic.png","barchartcolumnandrow.png","barcharttooltip.png","bycountrymarks.png","calcfield.png","charttitle.png","count.png","country.png","createhierarchy.png","createparameter.png","dataviz-makeover-3_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-3_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-3_files/distill-2.2.21/template.v2.js","dataviz-makeover-3_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-3_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-3_files/popper-2.6.0/popper.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-3_files/webcomponents-2.0.0/webcomponents.js","datefield.png","duplicate.png","editparameterchart.png","editparametermap.png","edittooltip.png","emptycont.png","eventtypetocolor.png","eventypecolor.png","filtercountryandeventtype.png","filters.png","filterview.png","finaldashboard.png","formhierarchy.png","givenchart.png","inputlonglat.png","longlat.png","longlatgenerated.png","marks.png","namehierarchy.png","opencountry.png","rangeofdates.png","rangeofdates2.png","renamemapbycountry.png","renamemapbyevent.png","selectview.png","selectviewmap.png","showfilter.png","showmarklabels.png","sidebyside.png","stateprov.png","tooltip.png","trendsheetcolumnandrow.png","trendsheetmarksandfilter.png","vertical.png"]}
+  {"type":"character","attributes":{},"value":["aftercount.png","automatic.png","barchartcolumnandrow.png","barcharttooltip.png","bycountrymarks.png","calcfield.png","charttitle.png","count.png","countrieseditcolor.png","country.png","createhierarchy.png","createparameter.png","dataviz-makeover-3_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-3_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-3_files/distill-2.2.21/template.v2.js","dataviz-makeover-3_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-3_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-3_files/popper-2.6.0/popper.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-3_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.css","dataviz-makeover-3_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-3_files/webcomponents-2.0.0/webcomponents.js","datefield.png","draft.jpg","duplicate.png","editparameterchart.png","editparametermap.png","edittooltip.png","emptycont.png","eventtypetocolor.png","eventypecolor.png","filtercountryandeventtype.png","filters.png","filterview.png","finaldashboard.png","formhierarchy.png","givenchart.png","inputlonglat.png","kachin.png","longlat.png","longlatgenerated.png","marks.png","myanmarbattles.png","myanmarhotspot.png","namehierarchy.png","opencountry.png","philviolence.png","philviolencehotspots.png","philviolencetrend.png","rakhine.png","rangeofdates.png","rangeofdates2.png","renamemapbycountry.png","renamemapbyevent.png","selectview.png","selectviewmap.png","shan.png","showfilter.png","showmarklabels.png","sidebyside.png","stateprov.png","thaibattles.png","thaibattleshotspots.png","thaicivilian.png","thaicivilianhotspot.png","thaiprotests.png","tooltip.png","trendsheetcolumnandrow.png","trendsheetmarksandfilter.png","vertical.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2127,7 +2127,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <h1 id="the-new-design">2.0 The New Design</h1>
 <p><font size="5"><strong>2.1 Draft Design</strong> <font size="4"></p>
 <p>Taking into account the points mentioned above, a proposed design was drafted as below.</p>
-<p>INSERT DRAFT</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="draft.jpg" /><!-- --></p>
+</div>
 <p><strong>Advantages of this design:</strong></p>
 <ul>
 <li><p>New tooltip to allow users to see the details of each event occurrence by doing a mouse-over on the datapoint.</p></li>
@@ -2239,6 +2241,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="barcharttooltip.png" width="431" /></p>
 </div>
+<p>To avoid confusion between color coding of countries and events, the Country field color palette was changed.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="countrieseditcolor.png" width="284" /></p>
+</div>
 <p><strong>Creating Trend Sheet:</strong></p>
 <p>A new sheet was created and renamed Trend. In the new sheet, Event Date was dragged into Columns, and Country/Province or State and two Event Type into Rows. One of the Event Types dragged into Rows was changed to Count.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2304,7 +2310,63 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 <p>Finally, the source was added using a text box below everything, giving the final result of the proposed dashboard.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="finaldashboard.png" width="956" /></p>
+<p><img src="finaldashboard.png" width="622" /></p>
+</div>
+<h1 id="observations">2.0 Observations</h1>
+<p><strong>Observation 1</strong></p>
+<p>Based on the chart for total occurrences, it can be observed that Myanmar has the highest number of battles at 4399 cases, compared to the other South-East Asian countries, accumulating more than twice the number of battles than Philippines which is ranked second.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="myanmarbattles.png" width="341" /></p>
+</div>
+<p>Going to the Map (By Event) chart, there are two main hotspots as seen below, as seen from clusters of blue data points.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="myanmarhotspot.png" width="335" /></p>
+</div>
+<p>From the Map (By Country/State or Province) chart, these hotspots are contributed by Rakhine, Shan, and Kachin provinces where Shan contributed almost half of the total occurrences in Myanmar.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="shan.png" width="490" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="kachin.png" width="497" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="rakhine.png" width="498" /></p>
+</div>
+<p><strong>Observation 2</strong></p>
+<p>Philippines was observed to have the highest number of violence against civilians events, totalling 6621 cases. This was almost three times more than Myanmar which has the second highest number of events of violence against civilians.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="philviolence.png" width="340" /></p>
+</div>
+<p>Looking at the trend, in 2016, Philippines experienced the highest number of such cases.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="philviolencetrend.png" width="347" /></p>
+</div>
+<p>There were no specific hotspots for these cases and going into further details, most of the cases were due to drugs, which is in line with President Rodrigo Duterte carrying out a war on drugs where he ordered the police force to kill anyone suspected to have any form a relation to drugs.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="philviolencehotspots.png" width="315" /></p>
+</div>
+<p><strong>Observation 3</strong></p>
+<p>Thailand encountered an unusual spike in protests in 2020, shooting up from 164 cases in 2019 to 679 cases in 2020. This was likely contributed by the protests for democracy against Prime Minister Prayut Chan-o-cha’s government. This later grew to include anti-royal protests.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="thaiprotests.png" width="261" /></p>
+</div>
+<p><strong>Observation 4</strong></p>
+<p>In 2010, Thailand experienced the highest number of battles between 2010 to 2020 at 264 occurrences.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="thaibattles.png" width="234" /></p>
+</div>
+<p>An obvious hotspot for battles in 2010 can be seen at the South of Thailand, which could be contributed significantly by the Southern Thailand insurgency as many of the occurrences involved the Muslim Malay Separatists.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="thaibattleshotspots.png" width="272" /></p>
+</div>
+<p><strong>Observation 5</strong></p>
+<p>A spike in violence against civilians could be observed in 2018 in Thailand.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="thaicivilian.png" width="155" /></p>
+</div>
+<p>These events could be seen to be happening in the Southern region of Thailand, in the same region as the battles observed in Observation 4. Going through the notes of the cases, they were mostly caused by Malay Muslim Separatists, who are involved in the insurgency discussed in Observation 4.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="thaicivilianhotspot.png" width="334" /></p>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
