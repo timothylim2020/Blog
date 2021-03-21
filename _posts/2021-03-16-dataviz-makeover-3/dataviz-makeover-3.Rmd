@@ -1,7 +1,7 @@
 ---
 title: "DataViz Makeover 3"
 description: |
-  This post aims to critique a published chart's data visualization and aesthetics, and in turn propose and design a new chart that can better visualize the findings from the report. 
+  This post aims to critique a published chart's data visualization clarity, aesthetics and interactivity, and in turn propose and design a new chart that can better visualize the findings from the report. 
 author:
   - name: Timothy Lim
     url: https://www.smu.edu.sg/
@@ -396,7 +396,7 @@ Looking at the trend, in 2016, Philippines experienced the highest number of suc
 knitr::include_graphics("philviolencetrend.png")
 ```
 
-There were no specific hotspots for these cases and going into further details, most of the cases were due to drugs, which is in line with President Rodrigo Duterte carrying out a war on drugs where he ordered the police force to kill anyone suspected to have any form a relation to drugs. 
+There were no specific hotspots for these cases. Going into further details, most of the cases were drugs related, which is in line with President Rodrigo Duterte carrying out a war on drugs where he ordered the police force to kill anyone suspected to have any form of relation to drugs. 
 
 ```{r}
 knitr::include_graphics("philviolencehotspots.png")
