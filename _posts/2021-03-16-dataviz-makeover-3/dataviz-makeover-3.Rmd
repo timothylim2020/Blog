@@ -65,7 +65,10 @@ b) A date slider can be implemented for the user to choose a specific date range
 
 Taking into account the points mentioned above, a proposed design was drafted as below.
 
-INSERT DRAFT
+```{r}
+knitr::include_graphics("draft.jpg")
+```
+
 
 **Advantages of this design:**
 
@@ -239,6 +242,12 @@ Country and Event Type were removed from the Filter, leaving Event Date behind. 
 knitr::include_graphics("barcharttooltip.png")
 ```
 
+To avoid confusion between color coding of countries and events, the Country field color palette was changed. 
+
+```{r}
+knitr::include_graphics("countrieseditcolor.png")
+```
+
 **Creating Trend Sheet:**
 
 A new sheet was created and renamed Trend. In the new sheet, Event Date was dragged into Columns, and Country/Province or State and two Event Type into Rows. One of the Event Types dragged into Rows was changed to Count. 
@@ -342,13 +351,91 @@ Finally, the source was added using a text box below everything, giving the fina
 knitr::include_graphics("finaldashboard.png")
 ```
 
+# 2.0 Observations
+
+**Observation 1**
+
+Based on the chart for total occurrences, it can be observed that Myanmar has the highest number of battles at 4399 cases, compared to the other South-East Asian countries, accumulating more than twice the number of battles than Philippines which is ranked second. 
+
+```{r}
+knitr::include_graphics("myanmarbattles.png")
+```
+
+Going to the Map (By Event) chart, there are two main hotspots as seen below, as seen from clusters of blue data points.
+
+```{r}
+knitr::include_graphics("myanmarhotspot.png")
+```
+
+From the Map (By Country/State or Province) chart, these hotspots are contributed by Rakhine, Shan, and Kachin provinces where Shan contributed almost half of the total occurrences in Myanmar. 
+
+```{r}
+knitr::include_graphics("shan.png")
+```
+
+```{r}
+knitr::include_graphics("kachin.png")
+```
+
+```{r}
+knitr::include_graphics("rakhine.png")
+```
 
 
+**Observation 2**
+
+Philippines was observed to have the highest number of violence against civilians events, totalling 6621 cases. This was almost three times more than Myanmar which has the second highest number of events of violence against civilians.  
+
+```{r}
+knitr::include_graphics("philviolence.png")
+```
+
+Looking at the trend, in 2016, Philippines experienced the highest number of such cases. 
+
+```{r}
+knitr::include_graphics("philviolencetrend.png")
+```
+
+There were no specific hotspots for these cases and going into further details, most of the cases were due to drugs, which is in line with President Rodrigo Duterte carrying out a war on drugs where he ordered the police force to kill anyone suspected to have any form a relation to drugs. 
+
+```{r}
+knitr::include_graphics("philviolencehotspots.png")
+```
 
 
+**Observation 3**
 
+Thailand encountered an unusual spike in protests in 2020, shooting up from 164 cases in 2019 to 679 cases in 2020. This was likely contributed by the protests for democracy against Prime Minister Prayut Chan-o-cha’s government. This later grew to include anti-royal protests.  
 
+```{r}
+knitr::include_graphics("thaiprotests.png")
+```
 
+**Observation 4**
 
-
+In 2010, Thailand experienced the highest number of battles between 2010 to 2020 at 264 occurrences. 
  
+```{r}
+knitr::include_graphics("thaibattles.png")
+```
+
+An obvious hotspot for battles in 2010 can be seen at the South of Thailand, which could be contributed significantly by the Southern Thailand insurgency as many of the occurrences involved the Muslim Malay Separatists. 
+
+```{r}
+knitr::include_graphics("thaibattleshotspots.png")
+```
+
+**Observation 5**
+
+A spike in violence against civilians could be observed in 2018 in Thailand. 
+
+```{r}
+knitr::include_graphics("thaicivilian.png")
+```
+
+These events could be seen to be happening in the Southern region of Thailand, in the same region as the battles observed in Observation 4. Going through the notes of the cases, they were mostly caused by Malay Muslim Separatists, who are involved in the insurgency discussed in Observation 4. 
+
+```{r}
+knitr::include_graphics("thaicivilianhotspot.png")
+```
+
